@@ -1,0 +1,11 @@
+<h1><%= @post.title %></h1>
+<% if @post.documents.attached? %>
+<p>
+  <strong>Docs:</strong>
+  <br>
+  <% @post.documents.each do |doc| %>
+    <%= image_tag(doc) %>
+  <% end %>
+</p>
+<% end %>
+

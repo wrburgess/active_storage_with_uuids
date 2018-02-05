@@ -1,0 +1,7 @@
+<%= form_for @post do |form| %>
+  <%= form.label :title %>
+  <%= form.text_field :title %>
+  <%= form.label :documents %>
+  <%= form.file_field :documents, multiple: true %>
+  <%= form.button :submit %>
+<% end %>
